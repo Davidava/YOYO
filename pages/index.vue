@@ -47,7 +47,7 @@
         </section>
         <section class="rent">
           <h1> <NuxtLink to="/prices">Вы можете арендовать</NuxtLink> студию для фото/видео съемок и мероприятий </h1>
-          <p> Для записи звоните нам по телефону +375298692000 <br>Или пишите в директ instagram </p>
+          <p> Для записи звоните нам по телефону <a href="tel:+375298692000">+375298692000</a> <br>Или пишите в директ instagram </p>
           <div class="instagram-icon">
             <a
               href="https://www.instagram.com/yoyo.studio/"
