@@ -1,0 +1,30 @@
+.rules {
+  &__title {
+    padding-top: 4rem;
+    p {
+      text-align: unset;
+      line-height: 1.4;
+      font-size: 28px;
+    }
+  }
+  &__content {
+    padding-top: 3rem;
+    h3 {
+      padding-top: 1.3rem;
+      font-family: playfair display;
+      font-size: 22px;
+      letter-spacing: 0.15em;
+      line-height: 1.8;
+      font-weight: 400;
+      padding-bottom: 1.5rem;
+    }
+    p {
+      padding-top: 0.3rem;
+      font-size: 14px;
+      line-height: 1.8;
+      span {
+        font-weight: 600;
+      }
+    }
+  }
+}

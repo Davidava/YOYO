@@ -1,0 +1,67 @@
+.footer {
+  background-color: rgb(231, 231, 231);
+  padding-top: 80px;
+  padding-bottom: 40px;
+  text-align: center;
+
+  &__item {
+    padding-bottom: 40px;
+    h5 {
+      font-family:'Raleway';
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      padding-bottom: 30px;
+    }
+    p {
+      letter-spacing: 0.05em;
+      line-height: 2.4;
+    }
+  }
+  
+  @include breakpoint($tablet-bp) {
+    text-align: unset;
+  }
+}
+
+.footer-icons {
+  a {
+    margin: 6px;
+    &:first-child{
+      margin-left: 0;
+    }
+  }
+
+  i {
+    font-family: social-icons-v4;
+    color: #575757;
+    &:hover{
+      color: black;
+    }
+  }
+  &__instagram {
+    &:before{
+      content: '\e80b';
+    }
+  }
+  &__pinterest {
+    &:before{
+      content: '\e813';
+    }
+  }
+  &__youtube {
+    &:before{
+      content: '\e81c';
+    }
+  }
+  &__facebook {
+    &:before{
+      content: '\e807';
+    }
+  }
+  &__vk {
+    &:before{
+      content: '\e81a';
+    }
+  }
+}

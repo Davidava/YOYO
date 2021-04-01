@@ -1,0 +1,15 @@
+.backgrouns {
+  .subtitle {
+    letter-spacing: 0.05em;
+    line-height: 1.6;
+  }
+  &__content{
+    padding-top: 1.25rem;
+    .image{
+      margin-top: 1.25rem;
+      &__wrapper {
+        padding-top: 125.45%
+      }
+    }
+  }
+}

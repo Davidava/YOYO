@@ -1,0 +1,18 @@
+ .nav-link {
+  text-transform: uppercase;
+  display: block;
+  color: black;
+  text-decoration: none;
+  font-size: 13px;
+  letter-spacing: .2em;
+  font-family: Anglecia Pro Display;
+
+  transition: color .2s linear;
+
+  &:hover {
+    color: rgba(204,204,204,1);
+  }
+ }
+ .nav-link_active {
+    color: rgba(204,204,204,1);
+ }

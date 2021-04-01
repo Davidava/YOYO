@@ -1,0 +1,16 @@
+.scroll-top {
+  transition: all ;
+  z-index: 2;
+  position: fixed;
+  bottom: 40px;
+  right: 20px;
+  width: 1.7rem;
+  height: 1.7rem;
+  background-color: transparent;
+  border: none;
+  @media(hover: hover) and (pointer: fine) {
+    &:hover svg {
+      fill: rgba(204,204,204,1);
+    }
+  }
+}

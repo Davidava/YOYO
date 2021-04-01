@@ -1,0 +1,13 @@
+.reception {
+  .subtitle {
+    line-height: 1.6;
+    letter-spacing: 0.05em;
+    margin-top: 2.5rem;
+  }
+  &__content {
+    padding-top: 1.875rem;
+    .image__wrapper {
+      padding-top: 48.69%
+    }
+  }
+}

@@ -1,0 +1,75 @@
+.sidebar {
+  transform: translateX(-100%);
+  transition: opacity .2s linear,transform 0s .5s,-webkit-transform 0s .5s,-moz-transform 0s .5s,-o-transform 0s .5s;
+  opacity: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding-top: 6rem;
+  padding-left: 2.5rem;
+  z-index: 5;
+  text-align: start;
+
+  @include breakpoint($tablet-bp) {
+    opacity: 1;
+    transform: translateX(+100%);
+    transition: transform .2s linear;
+    width: 300px;
+    padding-top: 2.5rem;
+    padding-left: 0;
+    text-align: center;
+  }
+  &__close-button {
+    padding: 20px;
+    padding-top: 17px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: transparent;
+    border: none;
+
+    @include breakpoint($tablet-bp) {
+      display: none;
+    }
+  }
+  &_show {
+    transform: translateX(0);
+    opacity: 1;
+    transition: opacity .2s linear,transform 0s,-webkit-transform 0s,-moz-transform 0s,-o-transform 0s;;
+
+    @include breakpoint($tablet-bp) {
+      transform: translateX(0);
+      transition: transform .2s linear;
+    }
+  }
+  @include breakpoint(1180px) {
+    display: none;
+  }
+}
+.sidebar__nav-enter-active, .sidebar__nav-leave-active {
+  transition: all .6s;
+  transition-delay: calc( 50ms * var(--index) );
+  @include breakpoint($tablet-bp) {
+    transition: none
+  }
+}
+.sidebar__nav-enter, .sidebar__nav-leave-to {
+  opacity: 0;
+  transform: translateX(-30px);
+  @include breakpoint($tablet-bp) {
+    transform: 0;
+    opacity: 1;
+  }
+}
+
+.nav__item {
+  display: flex;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  @include breakpoint($tablet-bp) {
+    justify-content: center;
+  }
+}

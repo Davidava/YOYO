@@ -1,0 +1,16 @@
+.brunch1 {
+  &__title {
+    p {
+      line-height: 1.6;
+      font-size: 15px;
+      padding-bottom: 1.4rem;
+      span {
+        font-size: 12px;
+        font-weight: 300;
+      }
+    }
+  }
+  &__content {
+    padding-top: 1rem;
+  }
+}

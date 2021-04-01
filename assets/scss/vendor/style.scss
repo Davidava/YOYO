@@ -1,0 +1,62 @@
+@import 'vars';
+@import 'mixins';
+@import 'reset';
+@import 'bootstrap';
+@import 'fonts';
+
+
+
+body {
+  background-color: white;
+	font-size: 14px;
+  font-family:
+    "Open Sans",
+    sans-serif;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+  color: black;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Blocks */
+@import '../blocks/app';
+@import '../blocks/header';
+@import '../blocks/burger';
+@import '../blocks/nav.scss';
+@import '../blocks/sidebar';
+@import '../blocks/main.scss';
+@import '../blocks/image-item.scss';
+@import '../blocks/home-page.scss';
+@import '../blocks/card.scss';
+@import '../blocks/scroll-top.scss';
+@import '../blocks/footer.scss';
+
+
+
+/* Pages */
+
+@import '../pages/prices.scss';
+@import '../pages/galery/galery.scss';
+@import'../pages/galery/interior.scss';
+@import '../pages/galery/events.scss';
+@import '../pages/galery/equipment.scss';
+@import '../pages/galery/dressingroom.scss';
+@import '../pages/galery/backgrounds.scss';
+@import '../pages/galery/reception.scss';
+@import '../pages/payment.scss';
+@import '../pages/calendar.scss';
+@import '../pages/contatcts.scss';
+@import '../pages/journal/journal.scss';
+@import '../pages/journal/newyear1920.scss';
+@import '../pages/journal/perfection.scss';
+@import '../pages/journal/newyear1819.scss';
+@import '../pages/journal/alana.scss';
+@import '../pages/journal/brunch2.scss';
+@import '../pages/journal/brunch1.scss';
+@import '../pages/rules.scss';
+
+

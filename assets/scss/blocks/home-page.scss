@@ -1,0 +1,60 @@
+.carousel {
+  div {
+    width: 100vw;
+    height: 55vw;
+    background-position: center;
+    background-size: cover;
+    @include breakpoint ($tablet-bp) {
+      height: 40vw;
+    }
+  }
+}
+
+.about {
+  padding-top: 6.25rem;
+}
+
+.about .card__title {
+  font-size: 30px;
+  line-height: 1.4;
+}
+
+.rent {
+  text-align: center;
+
+  h1 {
+    font-size: 28px;
+    line-height: 1.4;
+    margin-bottom: 60px;
+    font-family: Playfair Display;
+    a {
+      text-decoration: none;
+      color: #808080;
+        &:hover {
+          color: rgba(204,204,204,1);
+        }
+    }
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 25.2000007629395px;
+  }
+}
+
+.instagram-icon {
+  padding-top: 20px;
+
+  i {
+    font-family: social-icons-v4;
+    font-size: 30px;
+    line-height: 30px;
+    color: #a8a8a8;
+    &:before {
+      content: '\e828';
+    }
+    &:hover {
+      color: black;
+    }
+  }
+}

@@ -1,0 +1,63 @@
+.contacts {
+  &__title {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    max-width: 300px;
+    padding-bottom: 1.3rem;
+    h3 {
+      font-family: Playfair Display;
+      font-size: 24px;
+      line-height: 2;
+    }
+    p {
+      letter-spacing: 0.05em;
+      line-height: 2;
+      span {
+        font-weight: 600;
+      }
+    }
+  }
+  &__google-map {
+    margin-top: 6rem;
+    height: 350px;
+  }
+}
+.contacts-icons {
+  padding-top: 3rem;
+  a {
+    padding: 0.3rem;
+  }
+  i {
+    font-family: social-icons-v4;
+    font-size: 32px;
+    color: black;
+    line-height: 32px;
+    &:hover{
+      color: #575757;
+    }
+  }
+  &__instagram {
+    &:before{
+      content: '\e845';
+    }
+  }
+
+  &__vk {
+    &:before{
+      content: '\e854';
+    }
+  }
+
+  &__facebook {
+    &:before{
+      content: '\e841';
+    }
+  }
+
+  &__youtube {
+    &:before{
+      content: '\e856';
+    }
+  }
+}

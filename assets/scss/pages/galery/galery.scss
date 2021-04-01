@@ -1,0 +1,14 @@
+.galery {
+  &__item {
+    padding-bottom: 2.5rem;
+    .title {
+      text-align: unset;
+      font-size: 24px;
+      margin-top: 1.25rem;
+    }
+    .image__wrapper {
+      background-color: rgb(231, 231, 231);
+      padding-top: 66%;
+    }
+  }
+}
