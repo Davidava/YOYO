@@ -6,6 +6,7 @@
 
   &__item {
     padding-bottom: 40px;
+
     h5 {
       font-family:'Raleway';
       font-size: 11px;
@@ -16,6 +17,11 @@
     p {
       letter-spacing: 0.05em;
       line-height: 2.4;
+      a {
+        &:hover {
+          color: rgba(204,204,204,1);
+        }
+      }
     }
   }
   

@@ -39,6 +39,13 @@
   p {
     font-size: 14px;
     line-height: 25.2000007629395px;
+    a {
+      font-weight: 600;
+      color: #c8b18e;
+      &:hover {
+        color: black;
+      }
+    }
   }
 }
 

@@ -53,7 +53,7 @@
       <div class="col-md-5">
         <div class="footer__item">
           <h5> ТЕЛЕФОН: </h5>
-          <p> +375298692000 </p>
+          <p> <a href="tel:+375298692000">+375298692000 </a></p>
         </div>
       </div>
     </div>
