@@ -5,9 +5,9 @@
      </div>
     <Sidebar id="sidebar"/>
     <main class="main">
-      <Nuxt />
+      <Nuxt/>
+      <ScrollTop/>
     </main>
-    <ScrollTop/>
     <footer class="footer">
       <Footer/>
     </footer>

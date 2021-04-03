@@ -18,7 +18,7 @@ export default {
   data () {
     return {
       settings:{
-        lazyLoad: 'progressive',
+        lazyLoad: 'ondemand',
         slidesToShow: 1,
         slidesToScroll: 1,
         fade: true,
