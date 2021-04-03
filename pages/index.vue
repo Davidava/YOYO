@@ -231,10 +231,5 @@ export default {
     Carousel:() => import('../components/Carousel'),
     ImageItem: () => import('../components/Image-item'),
   },
-  
-  data () {
-    return {
-    }
-  },
 }
 </script>

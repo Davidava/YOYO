@@ -36,15 +36,5 @@ export default {
       ],
     };
   },
-  mounted() {
-    console.log(this.loadImage(this.carouselItems[0]))
-  },
-  methods: {
-  loadImage(url) {
-    const img = document.createElement('img');
-    img.src = url;
-    return new Promise(resolve => img.addEventListener('load', resolve));
-  }
-  }
 }
 </script>

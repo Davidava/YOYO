@@ -16,7 +16,6 @@ export default {
   data () {
     return {
       visible: false,
-      image: '/scroll-top.png',
     }
   },
   methods: {
@@ -26,8 +25,7 @@ export default {
         behavior: "smooth"
       });
     },
-    scrollListener(e) {
-      console.log(window.innerWidth)
+    scrollListener() {
         this.visible = window.scrollY > 350
       }
   },
