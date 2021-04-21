@@ -30,16 +30,14 @@ a {
 @import '../blocks/sidebar';
 @import '../blocks/main.scss';
 @import '../blocks/image-item.scss';
-@import '../blocks/home-page.scss';
 @import '../blocks/card.scss';
 @import '../blocks/scroll-top.scss';
 @import '../blocks/footer.scss';
-@import '../blocks/booking-dialog.scss';
 
 
 
 /* Pages */
-
+@import '../pages/home-page.scss';
 @import '../pages/prices.scss';
 @import '../pages/galery/galery.scss';
 @import'../pages/galery/interior.scss';
