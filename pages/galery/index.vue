@@ -2,12 +2,18 @@
   <section class="galery">
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-md-7" v-for="item in galery" :key="item.name" >
+        <div
+          v-for="item in galery"
+          :key="item.name"
+          class="col-md-7"
+        >
           <div class="galery__item">
-            <NuxtLink :to=item.link>
-              <ImageItem :url="item.src"/>
+            <NuxtLink :to="item.link">
+              <ImageItem :url="item.src" />
             </NuxtLink>
-            <h3 class="title"> {{ item.name }} </h3>
+            <h3 class="title">
+              {{ item.name }}
+            </h3>
           </div>
         </div>
       </div>
@@ -18,11 +24,11 @@
 <script>
 export default {
   components: {
-    ImageItem:() => import('../../components/Image-item')
+    ImageItem: () => import('../../components/Image-item'),
   },
   data() {
-    return{
-      galery:[
+    return {
+      galery: [
         {
           name: 'Интерьер',
           link: '/galery/interior',
@@ -53,8 +59,8 @@ export default {
           link: '/galery/reception',
           src: '//static-cdn4.vigbo.tech/u39982/52329/blog/4405883/3294128/41661431/1000-d5eb98074731c013c7c0fadbd9fb401c.jpg',
         },
-      ]
-    }
-  }
-}
+      ],
+    };
+  },
+};
 </script>

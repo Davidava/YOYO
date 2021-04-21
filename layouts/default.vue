@@ -1,66 +1,63 @@
 <template>
   <div class="app">
-     <div class="header">
-       <Header/>
-     </div>
-    <Sidebar id="sidebar"/>
+    <div class="header">
+      <Header @showSidebar="showSidebar" />
+    </div>
+    <Sidebar
+      :sidebar-active="sidebarActive"
+      @hideSidebar="hideSidebar"
+    />
     <main class="main">
-      <Nuxt/>
-      <ScrollTop/>
+      <Nuxt />
+      <ScrollTop />
     </main>
     <footer class="footer">
-      <Footer/>
+      <Footer />
     </footer>
   </div>
 </template>
 
 <script>
-import { mapGetters, mapActions } from 'vuex';
 
 export default {
-  components:{
-    Header:() => import('../components/Header'),
-    Sidebar:() => import('../components/Slidebar'),
-    Footer:() => import('../components/Footer'),
-    ScrollTop:() => import('../components/Scroll-top')
+  components: {
+    Header: () => import('../components/Header'),
+    Sidebar: () => import('../components/Sidebar'),
+    Footer: () => import('../components/Footer'),
+    ScrollTop: () => import('../components/Scroll-top'),
   },
 
-  computed:{
-    ...mapGetters({
-      sidebarActive:'sidebar/active',
-    })
+  data() {
+    return {
+      sidebarActive: false,
+    };
+  },
+  beforeUnmount() {
+    window.removeEventListener('click', () => {});
   },
 
-  watch:{
-    sidebarActive() {
-      if (this.sidebarActive) {
-        window.addEventListener('click', this.somefunc )
-        document.body.style.overflow = 'hidden';
-      } else if(!this.sidebarActive) {
-        document.body.style.overflow = '';
-        window.removeEventListener('click', this.somefunc )
-      }
-    }
-  },
-
-  beforeDestroy() {
-        window.removeEventListener('click', function(){});
+  methods: {
+    showSidebar() {
+      document.body.classList.add('show-sidebar');
+      this.sidebarActive = true;
+      window.addEventListener('click', this.clickOutside);
     },
 
-  methods:{
-    ...mapActions({
-      closeSIdebar: 'sidebar/close',
-    }),
-    somefunc(ev) {
-      const area = document.getElementById('sidebar')
-      const burger = document.getElementById('burger')
+    hideSidebar() {
+      document.body.classList.remove('show-sidebar');
+      this.sidebarActive = false;
+      window.removeEventListener('click', this.clickOutside);
+    },
+
+    clickOutside(ev) {
+      const area = document.querySelector('.sidebar');
+      const burger = document.querySelector('.burger');
       if (!burger.contains(ev.target)) {
         if (!area.contains(ev.target)) {
-          this.closeSIdebar();
+          this.hideSidebar();
         }
       }
-    }
-  }
-}
+    },
+  },
+};
 </script>
-

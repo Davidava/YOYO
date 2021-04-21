@@ -1,41 +1,41 @@
 <template>
   <button
+    v-show="visible"
     class="scroll-top"
     @click="scrollTop"
-    v-show="visible"
   >
-  <UpArrow/>
+    <UpArrow />
   </button>
 </template>
 
 <script>
 export default {
   components: {
-    UpArrow:() => import('/static/up-arrow-svgrepo-com.svg')
+    UpArrow: () => import('/static/up-arrow-svgrepo-com.svg'),
   },
-  data () {
+  data() {
     return {
       visible: false,
+    };
+  },
+  mounted() {
+    if (window.innerWidth > 1200) {
+      window.addEventListener('scroll', this.scrollListener);
     }
+  },
+  beforeUnmount() {
+    window.removeEventListener('scroll', this.scrollListener);
   },
   methods: {
     scrollTop() {
       window.scrollTo({
         top: 0,
-        behavior: "smooth"
+        behavior: 'smooth',
       });
     },
     scrollListener() {
-        this.visible = window.scrollY > 350
-      }
+      this.visible = window.scrollY > 350;
+    },
   },
-  mounted() {
-    if(window.innerWidth>1200) {
-      window.addEventListener('scroll', this.scrollListener)
-    }
-  },
-  beforeDestroy() {
-    window.removeEventListener('scroll', this.scrollListener)
-  }
-}
+};
 </script>

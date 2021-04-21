@@ -1,9 +1,8 @@
 export default {
-  // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'YOYO STUDIO | аренда фотостудии в Минске',
     htmlAttrs: {
-      lang: 'ru'
+      lang: 'ru',
     },
     meta: [
       { charset: 'utf-8' },
@@ -11,36 +10,20 @@ export default {
       { hid: 'description', name: 'description', content: 'Добро пожаловать!' },
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+    ],
   },
 
-  // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [
-    '@/assets/scss/vendor/style.scss'
-  ],
-  // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [
-    '@/plugins/lazy-load.client.js'
-  ],
-  // Auto import components: https://go.nuxtjs.dev/config-components
+  css: ['@/assets/scss/vendor/style.scss'],
+
   components: true,
 
-  // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: [
-  ],
-
-  // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [
-  ],
-
-  // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
     extend: (config) => {
-      const svgRule = config.module.rules.find(rule => rule.test.test('.svg'));
- 
+      const svgRule = config.module.rules.find((rule) => rule.test.test('.svg'));
+
       svgRule.test = /\.(png|jpe?g|gif|webp)$/;
- 
+
       config.module.rules.push({
         test: /\.svg$/,
         use: [
@@ -53,5 +36,5 @@ export default {
 
   router: {
     linkActiveClass: 'nav-link_active',
-  }
-}
+  },
+};

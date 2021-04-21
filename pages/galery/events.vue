@@ -8,15 +8,15 @@
               Мероприятия
             </h2>
             <p class="subtitle">
-              В студии вы можете проводить <span>образовательные мероприятия:</span> 
-              мастер-классы, семинары, лекции. Для этого у нас есть: 
-              проектор, колонка для вашей музыки, 25 стульев, 
+              В студии вы можете проводить <span>образовательные мероприятия:</span>
+              мастер-классы, семинары, лекции. Для этого у нас есть:
+              проектор, колонка для вашей музыки, 25 стульев,
               два больших стола общей вместительностью на 18 человек.
             </p>
             <p class="subtitle">
-              Так же в нашей студии вы можете проводить <span>дружеские встречи, 
-              праздники, бранчи или ужины.</span> Для этого у нас есть все, что описано 
-              выше и посуда на 15 персон. Столовые приборы, бокалы, кружки, тарелки, 
+              Так же в нашей студии вы можете проводить <span>дружеские встречи,
+                праздники, бранчи или ужины.</span> Для этого у нас есть все, что описано
+              выше и посуда на 15 персон. Столовые приборы, бокалы, кружки, тарелки,
               а также кувшины, подносы для тортов и пирогов, термос, большой термопот и чайник.
             </p>
             <p class="subtitle">
@@ -28,9 +28,9 @@
       <div class="events__content">
         <div class="row justify-content-center">
           <div
-            class="col-md-10"
             v-for="item in images"
             :key="item.src"
+            class="col-md-10"
           >
             <ImageItem
               :url="item.src"
@@ -46,11 +46,11 @@
 <script>
 export default {
   components: {
-    ImageItem:() => import('../../components/Image-item')
+    ImageItem: () => import('../../components/Image-item'),
   },
   data() {
-    return{
-      images:[
+    return {
+      images: [
         {
           src: 'https://res.cloudinary.com/dqq29xh64/image/upload/v1616158018/events/events-6.jpg',
           color: 'rgba(201,200,201,.7)',
@@ -75,9 +75,9 @@ export default {
           src: 'https://res.cloudinary.com/dqq29xh64/image/upload/v1616158073/events/events-1.jpg',
           color: 'rgba(201,200,201,.7)',
         },
-      ]
-    }
-  }
-  
-}
+      ],
+    };
+  },
+
+};
 </script>

@@ -15,35 +15,35 @@
               href="https://www.instagram.com/yoyo.studio/"
               target="_blank"
             >
-              <i class="footer-icons__instagram"/>
+              <i class="footer-icons__instagram" />
             </a>
             <a
               href="https://www.pinterest.com/yoyominsk/_created/"
               target="_blank"
             >
-              <i class="footer-icons__pinterest"/>
+              <i class="footer-icons__pinterest" />
             </a>
             <a
               href="https://www.youtube.com/channel/UCDQN41t0B47YKJvp3Xy7K9w"
               target="_blank"
             >
-              <i class="footer-icons__youtube"/>
+              <i class="footer-icons__youtube" />
             </a>
             <a
               href="https://www.facebook.com/yoyostudio.minsk/?_rdc=1&_rdr"
               target="_blank"
             >
-              <i class="footer-icons__facebook"/>
+              <i class="footer-icons__facebook" />
             </a>
             <a
               href="https://vk.com/yoyostudio"
               target="_blank"
             >
-              <i class="footer-icons__vk"/>
+              <i class="footer-icons__vk" />
             </a>
           </div>
         </div>
-        </div>
+      </div>
       <div class="col-md-5">
         <div class="footer__item">
           <h5> АДРЕС: </h5>

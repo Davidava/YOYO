@@ -2,7 +2,7 @@
   <section class="prices">
     <div class="container">
       <div class="row">
-        <div class="col-md-2"/>
+        <div class="col-md-2" />
         <div class="col-md-22">
           <div class="prices__title">
             <h2> ФОТО И ВИДЕО СЪЕМКА </h2>
@@ -24,7 +24,7 @@
       </div>
       <div class="prices__column">
         <div class="row">
-          <div class="col-md-2"/>
+          <div class="col-md-2" />
           <div class="col-md-5">
             <ImageItem
               url="https://res.cloudinary.com/dqq29xh64/image/upload/v1616518802/prices/1.jpg"
@@ -56,10 +56,10 @@
               </div>
             </div>
           </div>
-          <div class="col-md-1"/>
+          <div class="col-md-1" />
         </div>
         <div class="row">
-          <div class="col-md-2"/>
+          <div class="col-md-2" />
           <div class="col-md-5">
             <ImageItem
               url="https://res.cloudinary.com/dqq29xh64/image/upload/v1616518834/prices/4.jpg"
@@ -86,14 +86,17 @@
                 <h4> ПРОЕКТОР <span>10 р.</span> </h4>
               </div>
               <div class="item-prices__text">
-                <p> В стоимость включена возможность пользования проектором на весь период забронированного времени </p>
+                <p>
+                  В стоимость включена возможность пользования проектором
+                  на весь период забронированного времени
+                </p>
               </div>
             </div>
           </div>
-          <div class="col-md-1"/>
+          <div class="col-md-1" />
         </div>
         <div class="row">
-          <div class="col-md-2"/>
+          <div class="col-md-2" />
           <div class="col-md-5">
             <ImageItem
               url="https://res.cloudinary.com/dqq29xh64/image/upload/v1616518813/prices/2.png"
@@ -105,11 +108,16 @@
                 <h4> ШТАТИВ Manfrotto MVH400 </h4>
               </div>
               <div class="item-prices__text">
-                <p> 1 час аренды - 5 р.<br>2 часа аренды - 10 р.<br>3 и более часов - 15 р.<br>(на период всей съемки) </p>
+                <p>
+                  1 час аренды - 5 р.
+                  <br>2 часа аренды - 10 р.
+                  <br>3 и более часов - 15 р.
+                  <br>(на период всей съемки)
+                </p>
               </div>
             </div>
           </div>
-          <div class="col-md-12"/>
+          <div class="col-md-12" />
         </div>
       </div>
     </div>
@@ -118,8 +126,8 @@
 
 <script>
 export default {
-  components:{
+  components: {
     ImageItem: () => import('../components/Image-item'),
   },
-}
+};
 </script>

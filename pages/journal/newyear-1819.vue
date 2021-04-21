@@ -2,16 +2,27 @@
   <section class="newyear1819">
     <div class="container">
       <div class="newyear1819__title">
-        <h2 class="title">Новогодний декор</h2>
+        <h2 class="title">
+          Новогодний декор
+        </h2>
         <div class="row">
-          <div class="col-md-1"/>
+          <div class="col-md-1" />
           <div class="col-md-23">
             <p>
-              С 15 ноября 2018 по 13 января 2019 в студии был новогодний декор! Как всегда мы подошли с особым вниманием к выбору каждой детали. Декор получился классическим и гармоничным в натуральных оттенках с частичкой волшебства. Так, чтобы красота сделанных фотографий, оставила у вас радостные и тёплые чувства на долгое время!
+              С 15 ноября 2018 по 13 января 2019 в студии был новогодний декор!
+              Как всегда мы подошли с особым вниманием к выбору каждой детали.
+              Декор получился классическим и гармоничным в натуральных оттенках
+              с частичкой волшебства. Так, чтобы красота сделанных фотографий,
+              оставила у вас радостные и тёплые чувства на долгое время!
             </p>
-            <p><span>
-              ph @marina.solva @balendo.ph <br> md @daniel_pyatin @anna_nastya_love @annmodels @lili_raisa56 @danilevich_olia @aleksndrvich.mikita @elizaveta_turovets @mary.dontsova @_natalialutovich_
-            </span></p>
+            <p>
+              <span>
+                ph @marina.solva @balendo.ph
+                <br> md @daniel_pyatin @anna_nastya_love @annmodels @lili_raisa56
+                @danilevich_olia @aleksndrvich.mikita @elizaveta_turovets
+                @mary.dontsova @_natalialutovich_
+              </span>
+            </p>
           </div>
         </div>
       </div>
@@ -34,7 +45,7 @@
             />
           </div>
         </div>
-        <ImagesGrid :gridImages="gridImages"/>
+        <ImagesGrid :grid-images="gridImages" />
       </div>
     </div>
   </section>
@@ -47,9 +58,9 @@ export default {
     ImageItem: () => import('../../components/Image-item'),
   },
   data() {
-    return{
-      gridImages:{
-        firstColumn:[
+    return {
+      gridImages: {
+        firstColumn: [
           {
             src: 'https://res.cloudinary.com/dqq29xh64/image/upload/v1616669508/journal/nwyear-1819/1/1.jpg',
             width: '500',
@@ -99,7 +110,7 @@ export default {
             color: 'rgba(148,129,107,.7)',
           },
         ],
-        secondColumn:[
+        secondColumn: [
           {
             src: 'https://res.cloudinary.com/dqq29xh64/image/upload/v1616669862/journal/nwyear-1819/2/1.jpg',
             width: '500',
@@ -169,7 +180,7 @@ export default {
             color: 'rgba(146,123,96,.7)',
           },
         ],
-        thirdColumn:[
+        thirdColumn: [
           {
             src: 'https://res.cloudinary.com/dqq29xh64/image/upload/v1616670143/journal/nwyear-1819/3/1.jpg',
             width: '500',
@@ -218,9 +229,9 @@ export default {
             height: '750',
             color: 'rgba(188,180,169,.7)',
           },
-        ]
-      }
-    }
-  }
-}
+        ],
+      },
+    };
+  },
+};
 </script>

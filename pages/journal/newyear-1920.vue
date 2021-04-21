@@ -2,10 +2,12 @@
   <section class="newyear1920">
     <div class="container">
       <div class="newyear1920__title">
-        <h2 class="title"> Новогодний декор 2019/2020 </h2>
+        <h2 class="title">
+          Новогодний декор 2019/2020
+        </h2>
       </div>
       <div class="newyear1920__content">
-        <ImagesGrid :gridImages='gridImages'/>
+        <ImagesGrid :grid-images="gridImages" />
       </div>
     </div>
   </section>
@@ -14,72 +16,72 @@
 <script>
 export default {
   components: {
-    ImagesGrid:() => import('../../components/ImagesGrid'),
+    ImagesGrid: () => import('../../components/ImagesGrid'),
   },
   data() {
-    return{
+    return {
       gridImages: {
-        firstColumn:[
-        {
-          src: 'https://res.cloudinary.com/dqq29xh64/image/upload/v1616665537/journal/newyear-1920/1/1.jpg',
-          width: '500',
-          height: '700',
-          color: 'rgba(204,199,193,.7)',
-        },
-        {
-          src: 'https://res.cloudinary.com/dqq29xh64/image/upload/v1616665545/journal/newyear-1920/1/2.jpg',
-          width: '500',
-          height: '750',
-          color: 'rgba(77,84,75,.7)',
-        },
-        {
-          src: 'https://res.cloudinary.com/dqq29xh64/image/upload/v1616665555/journal/newyear-1920/1/3.jpg',
-          width: '500',
-          height: '333',
-          color: 'rgba(211,211,207,.7)',
-        },
-        {
-          width: '30',
-          height: '1',
-        },
-        {
-          src: 'https://res.cloudinary.com/dqq29xh64/image/upload/v1616665569/journal/newyear-1920/1/4.jpg',
-          width: '500',
-          height: '750',
-          color: 'rgba(148,136,113,.7)',
-        },
-        {
-          src: 'https://res.cloudinary.com/dqq29xh64/image/upload/v1616665585/journal/newyear-1920/1/5.jpg',
-          width: '500',
-          height: '750',
-          color: 'rgba(174,162,148,.7)',
-        },
-        {
-          src: 'https://res.cloudinary.com/dqq29xh64/image/upload/v1616665597/journal/newyear-1920/1/6.jpg',
-          width: '500',
-          height: '691',
-          color: 'rgba(99,92,80,.7)',
-        },
-        {
-          src: 'https://res.cloudinary.com/dqq29xh64/image/upload/v1616665628/journal/newyear-1920/1/7.jpg',
-          width: '500',
-          height: '750',
-          color: 'rgba(179,173,158,.7)',
-        },
-        {
-          src: 'https://res.cloudinary.com/dqq29xh64/image/upload/v1616665643/journal/newyear-1920/1/8.jpg',
-          width: '500',
-          height: '750',
-          color: 'rgba(185,174,162,.7)',
-        },
-        {
-          src: 'https://res.cloudinary.com/dqq29xh64/image/upload/v1616665662/journal/newyear-1920/1/9.jpg',
-          width: '500',
-          height: '750',
-          color: 'rgba(148,136,113,.7)',
-        },
+        firstColumn: [
+          {
+            src: 'https://res.cloudinary.com/dqq29xh64/image/upload/v1616665537/journal/newyear-1920/1/1.jpg',
+            width: '500',
+            height: '700',
+            color: 'rgba(204,199,193,.7)',
+          },
+          {
+            src: 'https://res.cloudinary.com/dqq29xh64/image/upload/v1616665545/journal/newyear-1920/1/2.jpg',
+            width: '500',
+            height: '750',
+            color: 'rgba(77,84,75,.7)',
+          },
+          {
+            src: 'https://res.cloudinary.com/dqq29xh64/image/upload/v1616665555/journal/newyear-1920/1/3.jpg',
+            width: '500',
+            height: '333',
+            color: 'rgba(211,211,207,.7)',
+          },
+          {
+            width: '30',
+            height: '1',
+          },
+          {
+            src: 'https://res.cloudinary.com/dqq29xh64/image/upload/v1616665569/journal/newyear-1920/1/4.jpg',
+            width: '500',
+            height: '750',
+            color: 'rgba(148,136,113,.7)',
+          },
+          {
+            src: 'https://res.cloudinary.com/dqq29xh64/image/upload/v1616665585/journal/newyear-1920/1/5.jpg',
+            width: '500',
+            height: '750',
+            color: 'rgba(174,162,148,.7)',
+          },
+          {
+            src: 'https://res.cloudinary.com/dqq29xh64/image/upload/v1616665597/journal/newyear-1920/1/6.jpg',
+            width: '500',
+            height: '691',
+            color: 'rgba(99,92,80,.7)',
+          },
+          {
+            src: 'https://res.cloudinary.com/dqq29xh64/image/upload/v1616665628/journal/newyear-1920/1/7.jpg',
+            width: '500',
+            height: '750',
+            color: 'rgba(179,173,158,.7)',
+          },
+          {
+            src: 'https://res.cloudinary.com/dqq29xh64/image/upload/v1616665643/journal/newyear-1920/1/8.jpg',
+            width: '500',
+            height: '750',
+            color: 'rgba(185,174,162,.7)',
+          },
+          {
+            src: 'https://res.cloudinary.com/dqq29xh64/image/upload/v1616665662/journal/newyear-1920/1/9.jpg',
+            width: '500',
+            height: '750',
+            color: 'rgba(148,136,113,.7)',
+          },
         ],
-        secondColumn:[
+        secondColumn: [
           {
             src: 'https://res.cloudinary.com/dqq29xh64/image/upload/v1616667542/journal/newyear-1920/2/1.jpg',
             width: '500',
@@ -212,9 +214,9 @@ export default {
             height: '750',
             color: 'rgba(210,206,201,.7)',
           },
-        ]
-      }, 
-    }
+        ],
+      },
+    };
   },
-}
+};
 </script>

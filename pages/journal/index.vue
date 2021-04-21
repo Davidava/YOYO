@@ -2,24 +2,27 @@
   <section class="journal">
     <div class="container">
       <div
-        class="journal__item"
         v-for="item in list"
         :key="item.title"
+        class="journal__item"
       >
         <div class="row">
-          <div class="col-md-3"/>
+          <div class="col-md-3" />
           <div class="col-md-8">
-            <NuxtLink class="image__link" :to=item.link>
+            <NuxtLink
+              class="image__link"
+              :to="item.link"
+            >
               <ImageItem
                 :url="item.imgUrl"
                 :color="item.color"
               />
             </NuxtLink>
           </div>
-          <div class="col-md-1"/>
+          <div class="col-md-1" />
           <div class="col-md-12">
             <p>{{ item.date }}</p>
-            <NuxtLink :to=item.link>
+            <NuxtLink :to="item.link">
               <h3>{{ item.title }}</h3>
             </NuxtLink>
           </div>
@@ -32,7 +35,7 @@
 <script>
 export default {
   components: {
-    ImageItem:() => import('../../components/Image-item')
+    ImageItem: () => import('../../components/Image-item'),
   },
   data() {
     return {
@@ -78,14 +81,14 @@ export default {
           date: '05.08.2018',
           imgUrl: 'https://res.cloudinary.com/dqq29xh64/image/upload/v1616603504/journal/index/6.jpg',
           color: 'rgba(189,185,182,.7)',
-        }
+        },
       ],
-    }
+    };
   },
   head() {
-    return{
+    return {
       title: 'ЖУРНАЛ',
-    }
+    };
   },
-}
+};
 </script>

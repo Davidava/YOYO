@@ -6,15 +6,15 @@
           <div class="contacts__title">
             <h3> YOYO STUDIO </h3>
             <p>
-              Минск, ул. Октябрьская 16/20, 2 этаж 
+              Минск, ул. Октябрьская 16/20, 2 этаж
               <br> <span>+375298692000</span>
               <br> hello@yoyostudio.by
             </p>
             <p>&nbsp;</p>
             <p>
               <span>
-              Работаем по предварительной записи
-              всю неделю кроме субботы
+                Работаем по предварительной записи
+                всю неделю кроме субботы
               </span>
             </p>
             <p>&nbsp;</p>
@@ -27,30 +27,30 @@
                 href="https://www.instagram.com/yoyo.studio/"
                 target="_blank"
               >
-                <i class="contacts-icons__instagram"/>
+                <i class="contacts-icons__instagram" />
               </a>
               <a
                 href="https://vk.com/yoyostudio"
                 target="_blank"
               >
-                <i class="contacts-icons__vk"/>
+                <i class="contacts-icons__vk" />
               </a>
               <a
                 href="https://www.facebook.com/yoyostudio.minsk/?_rdc=1&_rdr"
                 target="_blank"
               >
-                <i class="contacts-icons__facebook"/>
+                <i class="contacts-icons__facebook" />
               </a>
               <a
                 href="https://www.youtube.com/channel/UCDQN41t0B47YKJvp3Xy7K9w"
                 target="_blank"
               >
-                <i class="contacts-icons__youtube"/>
+                <i class="contacts-icons__youtube" />
               </a>
             </div>
           </div>
         </div>
-        <div class="col-md-1"></div>
+        <div class="col-md-1" />
         <div class="col-md-10">
           <div class="contatcts__map">
             <ImageItem
@@ -65,8 +65,8 @@
         <iframe
           style="width:100%; height:100%; border:0;"
           loading="lazy"
-          src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAlb21YToNOBTdDpv1ozMIwvPIElV3JoU0&amp;q=53.8909474,27.5713973&amp;center=53.8909474,27.5713973&amp;zoom=16">
-        </iframe>
+          src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAlb21YToNOBTdDpv1ozMIwvPIElV3JoU0&amp;q=53.8909474,27.5713973&amp;center=53.8909474,27.5713973&amp;zoom=16"
+        />
       </div>
     </div>
   </section>
@@ -76,6 +76,6 @@
 export default {
   components: {
     ImageItem: () => import('../components/Image-item'),
-  }
-}
+  },
+};
 </script>

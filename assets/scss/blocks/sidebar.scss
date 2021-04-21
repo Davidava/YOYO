@@ -1,3 +1,17 @@
+body.show-sidebar {
+  overflow: hidden;
+  .sidebar {
+    transform: translateX(0);
+    opacity: 1;
+    transition: opacity .2s linear,transform 0s,-webkit-transform 0s,-moz-transform 0s,-o-transform 0s;;
+  
+    @include breakpoint($tablet-bp) {
+      transform: translateX(0);
+      transition: transform .2s linear;
+    }
+  }
+}
+
 .sidebar {
   transform: translateX(-100%);
   transition: opacity .2s linear,transform 0s .5s,-webkit-transform 0s .5s,-moz-transform 0s .5s,-o-transform 0s .5s;
@@ -35,16 +49,7 @@
       display: none;
     }
   }
-  &_show {
-    transform: translateX(0);
-    opacity: 1;
-    transition: opacity .2s linear,transform 0s,-webkit-transform 0s,-moz-transform 0s,-o-transform 0s;;
 
-    @include breakpoint($tablet-bp) {
-      transform: translateX(0);
-      transition: transform .2s linear;
-    }
-  }
   @include breakpoint(1180px) {
     display: none;
   }

@@ -6,9 +6,9 @@
           v-for="image in gridImages.firstColumn"
           :key="image.src"
           :url="image.src"
-          :width=image.width
-          :height=image.height
-          :color=image.color
+          :width="image.width"
+          :height="image.height"
+          :color="image.color"
         />
       </div>
       <div class="col-md-8">
@@ -16,9 +16,9 @@
           v-for="image in gridImages.secondColumn"
           :key="image.src"
           :url="image.src"
-          :width=image.width
-          :height=image.height
-          :color=image.color
+          :width="image.width"
+          :height="image.height"
+          :color="image.color"
         />
       </div>
       <div class="col-md-8">
@@ -26,9 +26,9 @@
           v-for="image in gridImages.thirdColumn"
           :key="image.src"
           :url="image.src"
-          :width=image.width
-          :height=image.height
-          :color=image.color
+          :width="image.width"
+          :height="image.height"
+          :color="image.color"
         />
       </div>
     </div>
@@ -46,6 +46,6 @@ export default {
       type: Object,
       required: true,
     },
-  }
-}
+  },
+};
 </script>

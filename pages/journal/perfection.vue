@@ -4,8 +4,16 @@
       <div class="row justify-content-center">
         <div class="col-md-17">
           <div class="perfection__title">
-            <p> "Большинство словарей определяют Совершенство как некую удаленную и очень желаемую точку. И в терминах этого мира - недостижимую. Кроме одного словаря для мистиков, в котором говорится, что - это ты здесь и сейчас. </p>
-            <p> Ты и есть Исходная точка, лучшая версия по мнению Создателя.<br>Как цветок в букете - каждый из нас особенный и совершенный" </p>
+            <p>
+              "Большинство словарей определяют Совершенство как некую
+              удаленную и очень желаемую точку. И в терминах этого мира
+              - недостижимую. Кроме одного словаря для мистиков, в котором
+              говорится, что - это ты здесь и сейчас.
+            </p>
+            <p>
+              Ты и есть Исходная точка, лучшая версия по мнению Создателя.
+              <br>Как цветок в букете - каждый из нас особенный и совершенный"
+            </p>
           </div>
         </div>
       </div>
@@ -13,20 +21,28 @@
         <div class="row justify-content-center align-items-center">
           <div class="col-md-5">
             <ImageItem
-              width=201
-              height=203
+              width="201"
+              height="203"
               url="/images/journal/perfection/title.png"
             />
           </div>
-          <div class="col-md-1"/>
+          <div class="col-md-1" />
           <div class="col-md-12">
-            <p> Недавно в нашей студии прошел замечательный проект «Совершенство», организованный фотографом Еленой Макушкиной @lazonga для журнала Fashion Collection. </p>
-            <p> В этом проекте приняли участие 8 смелых женщин, пожелавшие сниматься без макияжа с «обнаженным» лицом. Чтобы увидеть и показать себя настоящими, а естественную красоту достойной внимания. </p>
+            <p>
+              Недавно в нашей студии прошел замечательный проект «Совершенство»,
+              организованный фотографом Еленой Макушкиной @lazonga для журнала
+              Fashion Collection.
+            </p>
+            <p>
+              В этом проекте приняли участие 8 смелых женщин, пожелавшие
+              сниматься без макияжа с «обнаженным» лицом. Чтобы увидеть и показать
+              себя настоящими, а естественную красоту достойной внимания.
+            </p>
           </div>
         </div>
       </div>
       <div class="perfection__break-line">
-        <div class="break-line-item"/>
+        <div class="break-line-item" />
       </div>
       <div class="perfection__content">
         <div class="row justify-content-center align-items-center">
@@ -45,11 +61,11 @@
                 url="/images/journal/perfection/polina-2.jpeg"
                 width="500"
                 height="334"
-                color='rgba(129,108,90,.7)'
+                color="rgba(129,108,90,.7)"
               />
             </div>
           </div>
-          <div class="col-md-1"/>
+          <div class="col-md-1" />
           <div class="col-md-9">
             <div class="perfection-item">
               <ImageItem
@@ -75,7 +91,7 @@
               />
             </div>
           </div>
-          <div class="col-md-1"/>
+          <div class="col-md-1" />
           <div class="col-md-7">
             <div class="perfection-item">
               <ImageItem
@@ -101,7 +117,7 @@
               />
             </div>
           </div>
-          <div class="col-md-1"/>
+          <div class="col-md-1" />
           <div class="col-md-8">
             <div class="perfection-item">
               <ImageItem
@@ -127,7 +143,7 @@
               />
             </div>
           </div>
-          <div class="col-md-2"/>
+          <div class="col-md-2" />
           <div class="col-md-7">
             <div class="perfection-item">
               <ImageItem
@@ -159,7 +175,7 @@
               />
             </div>
           </div>
-          <div class="col-md-1"/>
+          <div class="col-md-1" />
           <div class="col-md-9">
             <div class="perfection-item">
               <ImageItem
@@ -185,7 +201,7 @@
               />
             </div>
           </div>
-          <div class="col-md-1"/>
+          <div class="col-md-1" />
           <div class="col-md-10">
             <div class="perfection-item">
               <ImageItem
@@ -211,7 +227,7 @@
               />
             </div>
           </div>
-          <div class="col-md-2"/>
+          <div class="col-md-2" />
           <div class="col-md-10">
             <div class="perfection-item">
               <ImageItem
@@ -237,7 +253,7 @@
               />
             </div>
           </div>
-          <div class="col-md-1"/>
+          <div class="col-md-1" />
           <div class="col-md-7">
             <div class="perfection-item">
               <ImageItem
@@ -258,6 +274,6 @@
 export default {
   components: {
     ImageItem: () => import('../../components/Image-item'),
-  }
-}
+  },
+};
 </script>

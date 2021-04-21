@@ -4,20 +4,20 @@
       v-for="item in carouselItems"
       :key="item"
       :style="{ backgroundImage: `url('${item}')` }"
-    >
-    </div>
-</VueSlickCarousel>
+    />
+  </VueSlickCarousel>
 </template>
 
 <script>
-import VueSlickCarousel from 'slick-vuejs'
-import 'slick-vuejs/dist/slick-vuejs.css'
+import VueSlickCarousel from 'slick-vuejs';
+import 'slick-vuejs/dist/slick-vuejs.css';
+
 export default {
   components: { VueSlickCarousel },
 
-  data () {
+  data() {
     return {
-      settings:{
+      settings: {
         lazyLoad: 'ondemand',
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -30,11 +30,11 @@ export default {
         pauseOnHover: false,
       },
       carouselItems: [
-      '/images/carousel/3.jpg',
-      '/images/carousel/2.jpg',
-      '/images/carousel/1.jpg'
+        '/images/carousel/3.jpg',
+        '/images/carousel/2.jpg',
+        '/images/carousel/1.jpg',
       ],
     };
   },
-}
+};
 </script>
