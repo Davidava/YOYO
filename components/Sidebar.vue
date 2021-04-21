@@ -4,7 +4,7 @@
       class="sidebar__close-button"
       @click="$emit('hideSidebar')"
     >
-      <SidebarClose />
+      <CloseSvg />
     </button>
     <nav>
       <transition-group
@@ -35,7 +35,7 @@
 
 export default {
   components: {
-    SidebarClose: () => import('static/menu-close.svg'),
+    CloseSvg: () => import('static/menu-close.svg'),
   },
 
   props: {

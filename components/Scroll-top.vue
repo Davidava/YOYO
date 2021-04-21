@@ -13,19 +13,23 @@ export default {
   components: {
     UpArrow: () => import('/static/up-arrow-svgrepo-com.svg'),
   },
+
   data() {
     return {
       visible: false,
     };
   },
+
   mounted() {
     if (window.innerWidth > 1200) {
       window.addEventListener('scroll', this.scrollListener);
     }
   },
+
   beforeUnmount() {
     window.removeEventListener('scroll', this.scrollListener);
   },
+
   methods: {
     scrollTop() {
       window.scrollTo({
